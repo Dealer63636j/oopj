@@ -4,11 +4,11 @@ class two{
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Give the value Principal, Interest rate,Compounding frequency and Time");
-		float p = sc.nextFloat();
-		float r = sc.nextFloat();
-		float n = sc.nextFloat();
-		float t = sc.nextFloat();
+		double p = sc.nextDouble();
+		double r = sc.nextDouble();
+		double n = sc.nextDouble();
+		double t = sc.nextDouble();
 
-		System.out.println("The compound interes is :"+p*Math.pow(1+(r/n)));
+		System.out.println("The compound interes is :"+p*Math.pow((1+(r/n)),(n*t)));
 	}
 }
